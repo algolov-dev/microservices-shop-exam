@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: report-service-job
+  namespace: default
+spec:
+  schedule: "0 3 * * *" # каждый день в 03:00
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: curl-reports
+              image: curlimages/curl:7.87.0
+              command: ["sh", "-c"]
+              args:
+                - |
+                  echo "== Generating daily report =="
+                  curl -X GET http://report-service.default.svc.cluster.local:8084/api/reports/summary
+                  echo "== Done =="

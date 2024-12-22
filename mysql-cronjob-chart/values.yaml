@@ -1,0 +1,11 @@
+cronjob:
+  schedule: "*/5 * * * *" # Запускать каждые 5 минут
+  image:
+    repository: your-docker-repo/mysql-cronjob # Замените на свой репозиторий и имя образа
+    tag: latest
+  restartPolicy: OnFailure
+
+mysql:
+  host: mysql # Имя сервиса MySQL в вашем кластере Kubernetes
+  port: 3306
+  user: root

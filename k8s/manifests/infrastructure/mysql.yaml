@@ -30,6 +30,20 @@ spec:
               name: mysql-data
             - mountPath: /docker-entrypoint-initdb.d
               name: mysql-initdb-config
+          livenessProbe:
+            tcpSocket:
+              port: 3306
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 3
+          readinessProbe:
+            tcpSocket:
+              port: 3306
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 3
       volumes:
         - name: mysql-data
           persistentVolumeClaim:
@@ -90,5 +104,5 @@ metadata:
   name: mysql-initdb-config
 data:
   initdb.sql: |
-    CREATE DATABASE IF NOT EXISTS order_service;
-    CREATE DATABASE IF NOT EXISTS inventory_service;
+    CREATE DATABASE IF NOT EXISTS cat_service;
+    CREATE DATABASE IF NOT EXISTS login_service;

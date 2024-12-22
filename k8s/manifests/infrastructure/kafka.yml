@@ -7,6 +7,7 @@ spec:
   selector:
     matchLabels:
       app: broker
+
   template:
     metadata:
       labels:
@@ -45,6 +46,8 @@ spec:
                 configMapKeyRef:
                   key: KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR
                   name: kafka-config
+            - name: KAFKA_LOG4J_LOGGERS
+              value: "kafka.controller=DEBUG,kafka.producer.async.DefaultEventHandler=DEBUG,state.change.logger=DEBUG"
 ---
 apiVersion: v1
 kind: Service

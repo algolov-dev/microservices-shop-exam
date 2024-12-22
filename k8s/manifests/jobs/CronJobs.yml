@@ -1,0 +1,95 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: get-last-5-users
+  namespace: default
+spec:
+  # каждый день в 3:00
+  schedule: "0 3 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: mysql-client
+              image: mysql:8.3.0
+              command: ["sh", "-c"]
+              args:
+                - |
+                  echo "== Fetching last 5 users =="
+                  mysql -h mysql.default.svc.cluster.local \
+                        -u root \
+                        -p"$MYSQL_ROOT_PASSWORD" \
+                        -e "USE cat_service; SELECT * FROM users ORDER BY id DESC LIMIT 5;"
+                  echo "== Done =="
+              env:
+                - name: MYSQL_ROOT_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: mysql-secrets
+                      key: mysql_root_password
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: send-notifications
+  namespace: default
+spec:
+  # каждый день в 9:00
+  schedule: "0 9 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: mysql-client
+              image: mysql:8.3.0
+              command: ["sh", "-c"]
+              args:
+                - |
+                  echo "== Sending notifications (placeholder) =="
+                  echo "Fetching all user emails:"
+                  mysql -h mysql.default.svc.cluster.local \
+                        -u root \
+                        -p"$MYSQL_ROOT_PASSWORD" \
+                        -e "USE cat_service; SELECT email FROM users;"
+              env:
+                - name: MYSQL_ROOT_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: mysql-secrets
+                      key: mysql_root_password
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: cleanup-sessions
+  namespace: default
+spec:
+  # каждый день в 2:00
+  schedule: "0 2 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: mysql-client
+              image: mysql:8.3.0
+              command: ["sh", "-c"]
+              args:
+                - |
+                  echo "== Cleaning up old sessions =="
+                  mysql -h mysql.default.svc.cluster.local \
+                        -u root \
+                        -p"$MYSQL_ROOT_PASSWORD" \
+                        -e "USE cat_service; DELETE FROM sessions WHERE last_activity < NOW() - INTERVAL 30 DAY;"
+                  echo "== Done =="
+              env:
+                - name: MYSQL_ROOT_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: mysql-secrets
+                      key: mysql_root_password

@@ -12,8 +12,8 @@ docker pull grafana/tempo:2.2.2
 docker pull grafana/grafana:10.1.0
 docker pull saiupadhyayula007/new-api-gateway:latest
 docker pull saiupadhyayula007/new-product-service:latest
-docker pull saiupadhyayula007/new-order-service:latest
-docker pull saiupadhyayula007/new-inventory-service:latest
+docker pull saiupadhyayula007/new-cat-service:latest
+docker pull saiupadhyayula007/new-login-service:latest
 docker pull saiupadhyayula007/new-notification-service:latest
 
 kind load docker-image -n microservices mongo:7.0.5
@@ -30,6 +30,6 @@ kind load docker-image -n microservices grafana/tempo:2.2.2
 kind load docker-image -n microservices grafana/grafana:10.1.0
 kind load docker-image -n microservices saiupadhyayula007/new-api-gateway:latest
 kind load docker-image -n microservices saiupadhyayula007/new-product-service:latest
-kind load docker-image -n microservices saiupadhyayula007/new-order-service:latest
-kind load docker-image -n microservices saiupadhyayula007/new-inventory-service:latest
+kind load docker-image -n microservices saiupadhyayula007/new-cat-service:latest
+kind load docker-image -n microservices saiupadhyayula007/new-login-service:latest
 kind load docker-image -n microservices saiupadhyayula007/new-notification-service:latest
