@@ -36,6 +36,11 @@ spec:
                 configMapKeyRef:
                   key: SPRING_KAFKA_PRODUCER_PROPERTIES_SCHEMA_REGISTRY_URL
                   name: cat-service-config
+            - name: PAGE_TITLE
+              valueFrom:
+                configMapKeyRef:
+                  name: cat-service-config
+                  key: PAGE_TITLE
 ---
 apiVersion: v1
 kind: Service
@@ -56,3 +61,4 @@ metadata:
 data:
   SPRING_DATASOURCE_URL: "jdbc:mysql://mysql.default.svc.cluster.local:3306/cat_service"
   SPRING_KAFKA_PRODUCER_PROPERTIES_SCHEMA_REGISTRY_URL: "http://schema-registry.default.svc.cluster.local:8081"
+  PAGE_TITLE: "Новый Заголовок"

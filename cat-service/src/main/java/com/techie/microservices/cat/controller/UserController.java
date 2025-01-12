@@ -62,25 +62,4 @@ public class UserController {
         return "user-info";
     }
 
-    @PostMapping("/cronjob2")
-    public String createUserByCronJob(Model model) {
-        log.info("ДОШЛО!");
-        User newUser = new User();
-        newUser.setEmail("cronjob@example.com");
-        newUser.setPhone_number("1234567890");
-        newUser.setName("CronJob User");
-        newUser.setActive(true);
-        newUser.setPassword("password123");
-        newUser.setRoles(Collections.singleton(Role.ROLE_USER));
-
-        if (!userService.createUser(newUser)) {
-            model.addAttribute("errorMessage", "Пользователь с email: " + newUser.getEmail() + " уже существует");
-            return "error";
-        }
-
-        model.addAttribute("successMessage", "Пользователь успешно создан через CronJob");
-        return "success";
-    }
-
-
 }

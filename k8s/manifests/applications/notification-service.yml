@@ -16,16 +16,24 @@ spec:
         - name: notification-service
           image: algolov2/notification-service:latest
           env:
+            # Kafka bootstrap servers
             - name: SPRING_KAFKA_BOOTSTRAP-SERVERS
               valueFrom:
                 configMapKeyRef:
                   key: SPRING_KAFKA_BOOTSTRAP-SERVERS
                   name: common-config
+            # Kafka consumer schema registry
             - name: SPRING_KAFKA_CONSUMER_PROPERTIES_SCHEMA_REGISTRY_URL
               valueFrom:
                 configMapKeyRef:
                   key: SPRING_KAFKA_CONSUMER_PROPERTIES_SCHEMA_REGISTRY_URL
                   name: notification-service-config
+            # Подключаемся к той же БД, что и cat-service:
+            - name: SPRING_DATASOURCE_URL
+              valueFrom:
+                configMapKeyRef:
+                  key: SPRING_DATASOURCE_URL
+                  name: cat-service-config
 ---
 apiVersion: v1
 kind: Service

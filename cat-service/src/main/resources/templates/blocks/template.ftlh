@@ -10,7 +10,7 @@
                   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
                   crossorigin="anonymous">
 
-            <title> Shop </title>
+            <title> Cat Shop </title>
             <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
         </head>
         <body>

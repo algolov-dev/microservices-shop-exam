@@ -1,0 +1,88 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: insert-default-cat
+spec:
+  schedule: "0 0 * * *"  # Запуск ежедневно в полночь
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: insert-default-product
+              image: mysql:8.0
+              env:
+                - name: MYSQL_ROOT_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: mysql-secrets
+                      key: mysql_root_password
+                - name: MYSQL_DATABASE
+                  value: "cat_service"
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  mysql -h mysql -u root -p"${MYSQL_ROOT_PASSWORD}" "${MYSQL_DATABASE}" <<EOF
+                  START TRANSACTION;
+
+                  -- Вставляем дефолтный продукт в `products`
+                  INSERT INTO products (
+                      title, 
+                      description, 
+                      price, 
+                      city, 
+                      user_id, 
+                      preview_image_id, 
+                      date_of_created
+                  )
+                  SELECT 
+                      title, 
+                      description, 
+                      price, 
+                      city, 
+                      user_id, 
+                      NULL, -- Изначально устанавливаем NULL для preview_image_id
+                      date_of_created
+                  FROM default_products
+                  LIMIT 1;
+
+                  -- Получаем новый product_id
+                  SET @new_product_id = LAST_INSERT_ID();
+
+                  -- Вставляем связанные изображения в `images`
+                  INSERT INTO images (
+                      name, 
+                      original_file_name, 
+                      size, 
+                      content_type, 
+                      is_preview_image, 
+                      bytes, 
+                      product_id
+                  )
+                  SELECT 
+                      name, 
+                      original_file_name, 
+                      size, 
+                      content_type, 
+                      is_preview_image, 
+                      bytes, 
+                      @new_product_id
+                  FROM default_images;
+
+                  -- Получаем preview_image_id
+                  SET @preview_image_id = (
+                      SELECT id 
+                      FROM images 
+                      WHERE product_id = @new_product_id AND is_preview_image = TRUE
+                      LIMIT 1
+                  );
+
+                  -- Обновляем preview_image_id в `products`
+                  UPDATE products
+                  SET preview_image_id = @preview_image_id
+                  WHERE id = @new_product_id;
+
+                  COMMIT;
+                  EOF
+          restartPolicy: OnFailure

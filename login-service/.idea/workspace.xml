@@ -4,196 +4,228 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d90a235d-03ba-420d-a493-0daacc55d76e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/model/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/model/enums/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification-service/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification-service/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification-service/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification-service/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification-service/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/job/ReportGenerationScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/service/ReportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/controller/CityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/controller/ErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/controller/ImageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/service/CityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/static/images/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/access-denied.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/admin.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/blocks/template.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/login.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/my-products.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/product-edit.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/product-info.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/products.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/profile.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/registration.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/user-edit.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../order-service/src/main/resources/templates/user-info.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/com/techie/microservices/gateway/ApiGatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/com/techie/microservices/gateway/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/com/techie/microservices/gateway/routes/Routes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/resources/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker/grafana/dashboard.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker/grafana/datasource.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker/keycloak/realms/realm-export.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker/prometheus/prometheus.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker/tempo/tempo.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../k8s/manifests/jobs/cronjob.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/config/auth.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/interceptor/auth.interceptor.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/model/order.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/model/product.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/add-product/add-product.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../k8s/manifests/jobs/cronjob2.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/add-product/add-product.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/add-product/add-product.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/add-product/add-product.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/home-page/home-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../notification-service/src/main/resources/users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/home-page/home-page.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/home-page/home-page.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/pages/home-page/home-page.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/order/order.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/order/order.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/product/product.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/product/product.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/header/header.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/header/header.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/header/header.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shared/header/header.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/tsconfig.spec.json" beforeDir="false" />
+    <list default="true" id="cf782967-6d51-404c-b16f-a22eab12ca7c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cat-service/src/main/java/com/techie/microservices/cat/service/RecentUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cat-service/src/main/resources/templates/recent-users.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../k8s/manifests/jobs/add-default-cat.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../k8s/manifests/jobs/send-email-cronjob.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../k8s/manifests/jobs/smtp-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../report-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../report-service/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../report-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../report-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../report-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/controller/ReportController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/model/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/model/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/model/Image.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/model/enums/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/repository/CatRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/repository/CityRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/repository/ImageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/java/com/example/ReportService/service/ReportService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportService/src/test/java/com/example/ReportService/ReportServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../report-service/src/test/java/com/example/ReportService/ReportServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#ib_16384_0.dblwr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo10_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo11_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo14_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo15_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo16_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo17_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo18_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo20_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo21_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo24_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo25_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo26_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo27_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo29_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo31_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo33_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo34_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo35_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo36_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo40_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/#innodb_redo/#ib_redo9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/auto.cnf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/binlog.000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/binlog.000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/binlog.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/ca.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/client-key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/ib_buffer_pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/ibdata1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/mysql.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/mysql/general_log.CSV" beforeDir="false" afterPath="$PROJECT_DIR$/../cat-service/src/main/java/com/techie/microservices/cat/model/RecentUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/mysql/general_log_215.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/mysql/slow_log.CSM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/mysql/slow_log.CSV" beforeDir="false" afterPath="$PROJECT_DIR$/../cat-service/src/main/java/com/techie/microservices/cat/repository/RecentUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/mysql/slow_log_216.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/binary_log_trans_191.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/data_lock_waits_163.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/data_locks_162.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_errors_su_141.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_errors_su_142.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_errors_su_143.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_errors_su_144.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_stages_cu_113.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_stages_hi_114.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_stages_hi_115.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_stages_su_117.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_stages_su_118.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_stages_su_119.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_121.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_122.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_123.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_124.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_125.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_126.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_128.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_129.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_130.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_131.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_statement_132.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_transacti_133.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_transacti_134.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_transacti_135.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_transacti_136.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_transacti_137.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_transacti_138.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_transacti_139.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_transacti_140.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_waits_cur_84.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_waits_sum_88.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_waits_sum_89.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_waits_sum_91.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/events_waits_sum_92.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/file_instances_93.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/file_summary_by__94.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/file_summary_by__95.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/global_status_183.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/global_variables_186.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/host_cache_96.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/keyring_componen_193.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/keyring_keys_154.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/memory_summary_b_156.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/memory_summary_b_159.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/memory_summary_g_155.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/objects_summary__98.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/performance_time_99.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/persisted_variab_189.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/replication_appl_167.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/replication_appl_168.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/replication_appl_169.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/replication_appl_170.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/replication_appl_172.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/replication_appl_173.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/replication_asyn_175.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/replication_conn_166.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/replication_grou_165.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/session_account__153.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/session_connect__152.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/session_status_184.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/session_variable_187.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/setup_consumers_103.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/setup_instrument_104.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/setup_meters_105.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/setup_metrics_106.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/setup_objects_107.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/setup_threads_108.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/socket_summary_b_150.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/socket_summary_b_151.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/status_by_accoun_179.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/table_handles_160.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/table_io_waits_s_109.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/performance_schema/variables_info_188.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/public_key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/server-key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/sys/sys_config.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/undo_001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/mysql/undo_002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cat-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/src/main/java/com/techie/microservices/cat/controller/ErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cat-service/src/main/java/com/techie/microservices/cat/controller/ErrorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/src/main/java/com/techie/microservices/cat/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cat-service/src/main/java/com/techie/microservices/cat/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/src/main/java/com/techie/microservices/cat/service/CityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cat-service/src/main/java/com/techie/microservices/cat/service/CityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../cat-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/src/main/resources/templates/access-denied.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../cat-service/src/main/resources/templates/access-denied.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cat-service/src/main/resources/templates/blocks/template.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../cat-service/src/main/resources/templates/blocks/template.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../k8s/manifests/applications/cat-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../k8s/manifests/applications/cat-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../k8s/manifests/applications/notification-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../k8s/manifests/applications/notification-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../k8s/manifests/jobs/CronJobs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../k8s/manifests/jobs/cronjob-reports.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../k8s/manifests/jobs/cronjob-reports.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../k8s/manifests/jobs/notification-CronJob.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/InventoryServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/config/ObservabilityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/config/OpenAPIConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/techie/microservices/inventory/service/InventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/login/LoginServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/login/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/login/model/Image.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/login/model/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/login/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/login/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/login/model/enums/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/login/repository/LoginRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/login/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techie/microservices/login/service/LoginService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__add_inventory.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../k8s/manifests/applications/api-gateway.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../k8s/manifests/applications/frontend.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../k8s/manifests/applications/inventory-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../k8s/manifests/applications/inventory-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../k8s/manifests/infrastructure/kafka-ui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../k8s/manifests/infrastructure/kafka-ui.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../k8s/manifests/infrastructure/kafka.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../k8s/manifests/infrastructure/kafka.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../k8s/manifests/infrastructure/mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../k8s/manifests/infrastructure/mysql.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java/com/techie/microservices/inventory/LoginServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java/com/techie/microservices/inventory/TestLoginServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysql-cronjob-chart/Chart.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysql-cronjob-chart/mysql-cronjob-image/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysql-cronjob-chart/mysql-cronjob-image/get_databases.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysql-cronjob-chart/templates/cronjob.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysql-cronjob-chart/values.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../notification-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/NotificationServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/config/ObservabilityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/service/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/job/ReportGenerationScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/service/AdvertService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/service/AdvertService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notification-service/src/main/java/com/techie/microservices/notification/service/ReportService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../notification-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notification-service/src/main/resources/avro/order-placed.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/../notification-service/src/main/resources/avro/order-placed.avsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notification-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../notification-service/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/config/ObservabilityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/config/OpenAPIConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/config/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/config/RestClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/dto/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/dto/OrderRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/event/OrderPlacedEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/techie/microservices/order/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/resources/avro/order-placed.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/resources/avro/order-placed.avsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/resources/db/migration/V1__init.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/resources/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../product-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/resources/logback-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "algolov-dev"
-  }
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
 }]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:algolov-dev/microservices-shop.git",
-    "accountId": "9f7cf603-d69d-48af-b8b8-5164474c8101"
-  }
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
 }]]></component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2qYteYHNRRC0kHgHcmcxPKcsbD7" />
+  <component name="ProjectId" id="2rVppO5LF7axVpOSHmjf1xVV177" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
+    "Maven.Unknown [spring-boot:build-image].executor": "Run",
+    "Maven.login-service [package,docker:build...].executor": "Run",
+    "Maven.login-service [spring-boot:build-image...].executor": "Run",
+    "Maven.login-service [spring-boot:build-image].executor": "Run",
+    "Maven.login-service [spring-boot:push].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.InventoryServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/55alg/Desktop/cat-shop/spring-boot-3-microservices-course-initial/inventory-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -202,10 +234,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn spring-boot:push" />
+      <command value="mvn spring-boot:build-image " />
+      <command value="mvn spring-boot:build-image -DskipTests -DdockerPassword=dckr_pat_b2VEm4Pd6gNMhhyRfYFDex4bFLM" />
+      <command value="mvn package docker:build docker:push " />
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="inventory-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techie.microservices.inventory.InventoryServiceApplication" />
+    <configuration name="LoginServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="login-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.login_service.LoginServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -222,17 +262,27 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d90a235d-03ba-420d-a493-0daacc55d76e" name="Changes" comment="" />
-      <created>1734851432101</created>
+      <changelist id="cf782967-6d51-404c-b16f-a22eab12ca7c" name="Changes" comment="" />
+      <created>1736654278713</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1734851432101</updated>
-      <workItem from="1734851433287" duration="4000" />
-      <workItem from="1734863977873" duration="1049000" />
+      <updated>1736654278713</updated>
+      <workItem from="1736654280128" duration="3106000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

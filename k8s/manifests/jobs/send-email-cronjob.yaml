@@ -1,0 +1,36 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: update-adv-flag
+spec:
+  schedule: "*/1 * * * *" # Запуск каждую минуту
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: update-flag
+              image: mysql:8.0
+              env:
+                - name: MYSQL_ROOT_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: mysql-secrets
+                      key: mysql_root_password
+                - name: MYSQL_DATABASE
+                  value: "cat_service"
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  # Обновление флага в начале
+                  mysql -h mysql -u root -p${MYSQL_ROOT_PASSWORD} ${MYSQL_DATABASE} -e "UPDATE adv SET flag = TRUE WHERE id = 1;"
+                  echo "Flag set to TRUE at $(date)"
+                  
+                  # Ждем 30 секунд
+                  sleep 30
+                  
+                  # Второе обновление (на всякий случай)
+                  mysql -h mysql -u root -p${MYSQL_ROOT_PASSWORD} ${MYSQL_DATABASE} -e "UPDATE adv SET flag = TRUE WHERE id = 1;"
+                  echo "Flag set to TRUE again at $(date)"
+          restartPolicy: OnFailure

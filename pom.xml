@@ -14,10 +14,7 @@
 
   <name>spring-boot-3-microservices</name>
   <modules>
-    <module>notification-service</module>
-    <module>ReportService</module>
     <module>cat-service</module>
-    <module>login-service</module>
   </modules>
 
   <properties>

@@ -1,21 +1,27 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: report-service-job
-  namespace: default
+  name: update-recent-users
 spec:
-  schedule: "0 3 * * *" # каждый день в 03:00
+  schedule: "0 * * * *"
   jobTemplate:
     spec:
       template:
         spec:
-          restartPolicy: Never
           containers:
-            - name: curl-reports
-              image: curlimages/curl:7.87.0
-              command: ["sh", "-c"]
-              args:
+            - name: update-recent-users
+              image: mysql:8.3.0
+              env:
+                - name: MYSQL_ROOT_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: mysql-secrets
+                      key: mysql_root_password
+                - name: MYSQL_DATABASE
+                  value: "cat_service"
+              command:
+                - /bin/sh
+                - -c
                 - |
-                  echo "== Generating daily report =="
-                  curl -X GET http://report-service.default.svc.cluster.local:8084/api/reports/summary
-                  echo "== Done =="
+                  mysql -h mysql -u root -p${MYSQL_ROOT_PASSWORD} ${MYSQL_DATABASE} -e "CALL UpdateRecentUsers();"
+          restartPolicy: OnFailure
