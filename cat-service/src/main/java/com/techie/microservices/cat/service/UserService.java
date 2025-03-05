@@ -1,6 +1,5 @@
 package com.techie.microservices.cat.service;
 
-import com.techie.microservices.cat.client.LoginClient;
 import com.techie.microservices.cat.model.User;
 import com.techie.microservices.cat.model.enums.Role;
 import com.techie.microservices.cat.repository.UserRepository;
@@ -25,15 +24,10 @@ import java.util.stream.Collectors;
 public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
-    private final LoginClient loginClient;
 
     public boolean createUser(User user) {
 
         String email = user.getEmail();
-        var isClientAuth = loginClient.isInStock(user.getEmail(), user.getPassword());
-        if (isClientAuth) {
-            log.info("Чек логина");
-        }
         if (userRepository.findByEmail(email) != null) return false;
         user.setActive(true);
         user.setPassword(passwordEncoder.encode(user.getPassword()));

@@ -23,7 +23,7 @@
         </#if>
         <a class="btn btn-primary mb-3" style="text-align: center; width: 100%"
            href="/my/products">
-            Мои котики
+            Мои изображения
         </a>
         <form action="/logout" method="post">
             <input type="hidden" name="_csrf" value="${_csrf.token}"/>

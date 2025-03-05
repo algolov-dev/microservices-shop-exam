@@ -13,7 +13,7 @@
     </div>
     <br>
     <hr>
-    <h1 style="text-align: center">Коты пользователя ${user.name}</h1>
+    <h1 style="text-align: center">Изображения пользователя ${user.name}</h1>
     <br>
     <div class="card-columns">
         <#list products as product>
@@ -23,7 +23,6 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">${product.title}</h5>
                         <p class="card-text">${product.price} ₽</p>
-                        <span class="mt-auto">${product.city}</span>
                     </div>
                 </div>
             </a>

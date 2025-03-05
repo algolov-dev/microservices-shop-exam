@@ -1,6 +1,5 @@
 package com.techie.microservices.cat.controller;
 
-import com.techie.microservices.cat.client.LoginClient;
 import com.techie.microservices.cat.dto.CatRequest;
 import com.techie.microservices.cat.model.Product;
 import com.techie.microservices.cat.model.User;
@@ -22,7 +21,6 @@ public class CatController {
 
     private final CatService catService;
     private final ProductService productService;
-    private final LoginClient loginClient;
 
     @PostMapping("/cat/create")
     public String createCat(@RequestParam Long productId, Principal principal, RedirectAttributes redirectAttributes) {
@@ -30,12 +28,10 @@ public class CatController {
             User currentUser = productService.getUserByPrincipal(principal);
             Product product = productService.getProductById(productId);
 
-            var userIsAuth = loginClient.isInStock("login", "password");
             if (currentUser == null || !currentUser.isActive()) {
                 redirectAttributes.addFlashAttribute("error", "Пользователь не активен или не авторизован");
                 return "redirect:/product/" + productId;
             }
-
             CatRequest catRequest = new CatRequest(
                     product.getTitle(),
                     product.getPrice(),
@@ -52,7 +48,5 @@ public class CatController {
             return "redirect:/product/" + productId;
         }
     }
-
-
 }
 

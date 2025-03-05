@@ -11,7 +11,8 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findByTitle(String title);
 
     Page<Product> findByTitleContainingIgnoreCaseAndUser_ActiveTrue(String title, Pageable pageable);
-    Page<Product> findByCityContainingIgnoreCaseAndUser_ActiveTrue(String city, Pageable pageable);
-    Page<Product> findByTitleContainingIgnoreCaseAndCityContainingIgnoreCaseAndUser_ActiveTrue(String title, String city, Pageable pageable);
+    Page<Product> findByCategoryContainingIgnoreCaseAndUser_ActiveTrue(String category, Pageable pageable);
+    Page<Product> findByTitleContainingIgnoreCaseAndCategoryContainingIgnoreCaseAndUser_ActiveTrue(String title, String category, Pageable pageable);
     Page<Product> findAllByUser_ActiveTrue(Pageable pageable);
+    Page<Product> findByTags_NameIgnoreCaseAndUser_ActiveTrue(String tagName, Pageable pageable);
 }

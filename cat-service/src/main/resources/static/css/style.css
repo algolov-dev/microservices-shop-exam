@@ -1,8 +1,3 @@
-.product:hover {
-    transition: 0.5s;
-    transform: scale(1.02);
-}
-
 .product-link {
     color: #000 !important;
     text-decoration: none
@@ -23,12 +18,6 @@
     justify-content: space-between;
 }
 
-.card-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .product-link {
     text-decoration: none;
     color: inherit;
@@ -44,9 +33,40 @@
     color: white;
 }
 
+.card-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .scale-on-hover:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
+}
+
+.scale-on-hover:hover {
+    transform: scale(1.05);
+}
+
+/* Блок тегов по умолчанию скрыт */
+.scale-on-hover .product-tags {
+    display: none;
+}
+
+/* При наведении на карточку список тегов появляется */
+.scale-on-hover:hover .product-tags {
+    display: block;
+}
+
+.scale-on-hover-wrapper .card-scale-container {
+    transition: transform 0.2s ease-in-out;
+}
+
+/* При наведении на внешнюю обертку масштабирование применяется только к контейнеру с изображением */
+.scale-on-hover-wrapper:hover .card-scale-container {
+    transform: scale(1.05);
+    /* Добавление z-index, если нужно, чтобы элемент был поверх остальных */
+    z-index: 2;
 }
 
 /* Слайдер */
@@ -56,19 +76,18 @@
     background-image: none;
 }
 
-
 .carousel-control-prev,
 .carousel-control-next {
     background-color: transparent;
     bcat: none;
     visibility: hidden;
-    transition: visibility 0s, opacity 0.3s ease;
+    transition: visibility 0s, opacategory 0.3s ease;
 }
 
 .carousel:hover .carousel-control-prev,
 .carousel:hover .carousel-control-next {
     visibility: visible;
-    opacity: 1;
+    opacategory: 1;
 }
 
 .carousel-control-prev::before,

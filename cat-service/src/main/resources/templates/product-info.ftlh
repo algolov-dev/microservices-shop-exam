@@ -31,22 +31,31 @@
                     </#list>
                 </div>
 
+                <div class="text-center" style="margin: 0;">
+                    <#if product.tags?has_content>
+                        <#list product.tags as tag>
+                            <span class="badge bg-secondary me-1">${tag.name}</span>
+                        </#list>
+                    <#else>
+                        <span class="text-muted">Нет тегов</span>
+                    </#if>
+                </div>
+
             </div>
 
             <div class="col-md-6">
                 <hr>
                 <h1 class="text-center">${product.title} | ${product.price} ₽</h1>
                 <p class="text-center">${product.description}</p>
-                <p class="text-center">Номер телефона продавца: <strong>${authorProduct.phone_number}</strong></p>
 
                 <#if user.isActive()>
                     <#if user.isAdmin() || (user?? && product.user.id == user.id)>
                         <div class="text-center mt-3">
-                            <form method="post" action="/product/delete/${product.id}">
+                            <form method="post" action="/product/delete/${product.id}" class="d-inline">
                                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-                                <button type="submit" class="btn btn-danger">Удалить кота</button>
+                                <button type="submit" class="btn btn-danger btn-sm">Удалить</button>
                             </form>
-                            <!-- <a href="/product/edit/${product.id}" class="btn btn-warning ms-3">Изменить товар</a> -->
+                            <a href="/product/edit/${product.id}" class="btn btn-warning btn-sm d-inline ms-2">Изменить</a>
                         </div>
                     </#if>
                 </#if>
@@ -59,13 +68,12 @@
                     </a>
                 </p>
 
-                <!-- Кнопка "Заказать товар" -->
                 <#if user?? && user.isActive()>
                     <form method="post" action="/cat/create">
                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
                         <input type="hidden" name="productId" value="${product.id}" />
                         <div class="text-center mt-4">
-                            <button type="submit" class="btn btn-primary">Заказать кота</button>
+                            <button type="submit" class="btn btn-primary">Связаться с продавцом</button>
                         </div>
                     </form>
                 </#if>

@@ -1,6 +1,5 @@
 package com.techie.microservices.cat.service;
 
-import com.techie.microservices.cat.client.LoginClient;
 import com.techie.microservices.cat.dto.CatRequest;
 import com.techie.microservices.cat.event.CatPlacedEvent;
 import com.techie.microservices.cat.model.Cat;
@@ -12,7 +11,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
 import java.util.UUID;
 
 @Service

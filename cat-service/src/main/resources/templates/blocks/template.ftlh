@@ -10,14 +10,14 @@
                   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
                   crossorigin="anonymous">
 
-            <title> Cat Shop </title>
+            <title> Digital Cat Shop </title>
             <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
         </head>
         <body>
         <nav class="navbar navbar-dark bg-primary">
             <div class="container-fluid">
                 <a href="/">
-                    <span class="navbar-brand mb-0 h1 ms-5"> Shop </span>
+                    <span class="navbar-brand mb-0 h1 ms-5"> Магазин цифровых изображений котов </span>
                 </a>
                 <#if user.email??>
                 <div class="dropdown text-end">
